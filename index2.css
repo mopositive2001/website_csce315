@@ -69,7 +69,7 @@ body::-webkit-scrollbar { width: 0 !important }
     position: absolute;
     height:100%;
     width:20%;
-    color: blue;
+    color: white;
 }
 
 .letterH p{
