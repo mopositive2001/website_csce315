@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Send+Flowers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+body{
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* filter:brightness(50%); */
+}
+body::-webkit-scrollbar { width: 0 !important }
+
+.main{
+    position:relative;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.parent1{
+   background-color: pink; 
+}
+
+.bar{
+    position:absolute;
+    height:0.5%;
+    width: 70%;
+    top:5%;
+    left:50%;
+    transform: translate(-50%);
+    background-color: white;
+    opacity:0.5;
+    border-radius:20px;
+}
+
+.sectionList{
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10%;
+    width: 70%;
+    top: 4%;
+    left:50%;
+    transform: translate(-50%);
+
+}
+
+.section{
+    position: relative;
+    height: auto;
+    width: auto;
+    color: white;
+    font-size: 20px;
+}
+
+.section:hover{
+    animation: section_hover 1s;
+}
+
+@keyframes section_hover{
+    0%{
+        padding-bottom:0%;
+    }
+    50%{
+        padding-bottom:1.5%;
+    }
+    100%{
+        padding-bottom:0%;
+    }
+}
+
+.welcomeMessageContainer{
+    position: absolute;
+    height: 75%;
+    width: 75%;
+    top:25%;
+    left:50%;
+    transform: translate(-50%);
+}
+
+
+.letterH{
+    position: absolute;
+    height:100%;
+    width:20%;
+}
+
+.letterH p{
+    margin:0px;
+    font-size:2500%;
+}
+
+.messageSlot{
+    position: absolute;
+    height:59%;
+    width:78%;
+    /* background-color:white; */
+    top:41%;
+    left:28%;
+    overflow: hidden;
+}
+
+.message2{
+    display:none;
+}
+
+.messages:before{
+    position:absolute;
+    content: "ello!";
+    top:0%;
+    font-size: 755%;
+    animation: message_spin 10s infinite ease-in-out;
+    bottom:20px;
+}
+  
+@keyframes message_spin{
+    0%{
+        content:"ello!";
+        top:0%;
+    }
+    23%{
+        content:"ello!";
+        top:0%;
+    }
+    28%{
+        top:-100%;
+    }
+    33%{
+        content:"ow are you?";
+        top:0%
+    }
+    56%{
+        content:"ow are you?";
+        top:0% 
+    }
+    61%{
+        top:-100%;
+    }
+    66%{
+        content:"appy to see you at my website!";
+        top:0%
+    }
+    89%{
+        content:"appy to see you at my website!";
+        top:0%
+    }
+    94%{
+        top:-100%;
+    }
+    99%{
+        content:"ello!";
+        top:0%;
+    }
+}
+
+.sakura{
+    position:relative;
+    background-size:contain;
+    background-repeat:no-repeat;
+    height:45%; 
+    width:45%;
+    background-position: center;
+    background-image: url("sakura.png");
+    top: 20%;
+    left:-15%;
+}
+
+.sakura1{
+    position:relative;
+    background-size:contain;
+    background-repeat:no-repeat;
+    height:50%; 
+    width:50%;
+    background-position: center;
+    background-image: url("sakura1.png");
+    top:-170%;
+    left:63%;
+}
+
+.petal{
+    position: relative;
+    background-attachment: contain;
+    background-repeat: no-repeat;
+    height: 30%;
+    width: 30%;
+    background-position: center;
+}
+
+.one{
+    background-image: url(sakura-petals.png);
+    top:-20%;
+    left:75%;
+    animation: petal-fall1 9s infinite;
+}
+
+.two{
+    background-image: url(sakura-petals1.png);
+    top:-55%;
+    left:80%;
+    animation: petal-fall2 7s infinite;
+}
+
+.three{
+    background-image: url(sakura-petals1.png);
+    rotate:60deg;
+    top:-100%;
+    left:70%;
+    animation: petal-fall3 10s infinite;
+}
+
+.four{
+    background-image: url(sakura-petals.png);
+    rotate:180deg;
+    top:-120%;
+    left:75%;
+    animation: petal-fall4 6s infinite;
+
+}
+
+.modeButton{
+    position:absolute;
+    height:4%;
+    width:5%;
+    border-width:5px;
+    border-color: rgba(255, 252, 252, 0.726);
+    border-style:solid;
+    top:5%;
+    left:3%;
+}
+
+.white{
+    position:absolute;
+    height:80%;
+    width:50%;
+    top:50%;
+    left:7%;
+    transform: translate(0%,-50%);
+    background-color:white;
+    border-radius:100px;
+}
+
+.black{
+    position:absolute;
+    height:80%;
+    width:50%;
+    top:50%;
+    left:38%;
+    transform: translate(0%,-50%);
+    background-color:black;
+    border-radius:100px;
+}
+
+@keyframes petal-fall1{
+    0%{
+        rotate:0deg;
+        top:-20%;
+        left:75%;
+    }
+    100%{
+        rotate:90deg;
+        top:50%;
+        left:-40%;
+    }
+}
+
+@keyframes petal-fall2{
+    0%{
+        rotate:0deg;
+        top:-55%;
+    }
+    100%{
+        rotate:90deg;
+        top:50%;
+    }
+}
+
+@keyframes petal-fall3{
+    0%{
+        rotate:60deg;
+        top:-100%;
+        left:70%;
+    }
+    100%{
+        top:30%;
+        left:0%;
+        rotate: 100deg;
+    }
+}
+
+@keyframes petal-fall4{
+    0%{
+        rotate:180deg;
+        top:-120%;
+        left:75%;
+    }
+    100%{
+        top:0%;
+        left:30%;
+        rotate: 100deg;
+    }
+}
+.parent2{
+    background-image: linear-gradient(pink,rgb(226, 83, 143),rgb(149,182,223));
+ }
+
+ .bio_container{
+    position: absolute;
+    height:70%;
+    width:80%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-45%);
+    border-width:7px;
+    border-color: rgba(255, 252, 252, 0.726);
+    border-style:solid;
+    border-radius: 30px;
+ }
+
+ .self_image{
+    position: absolute;
+    height:100%;
+    width:40%;
+    background-image: url(vanessa_le_pic.jpeg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+ }
+
+ .paragraph{
+    position:absolute;
+    height: 100%;
+    width:54%;
+    top:5%;
+    left:43%;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    text-align:justify;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 125%;
+ }
+
+ .bio_title{
+    position:absolute;
+    font-size:1000%;
+    color: white;
+    font-family: 'Send Flowers', cursive;
+    width:100%;
+    top:-19%;
+    text-align: center;
+    background: solid;
+ }
+
+ .umbrella{
+     position: absolute;
+     height:50%;
+     width: 40%;
+     background-size: contain;
+     background-repeat: no-repeat;
+ }
+
+ .one_u{
+     top:-5%;
+     left:-5%;
+     background-image: url(umbrella1.png);
+ }
+
+ .two_u{
+     top:70%;
+     left:76%;
+     background-image: url(umbrella.png);
+ }
+
+ .parent3{
+    background-image: url(purple_background.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+ }
+
+ .panel{
+     position:absolute;
+     height:100%;
+     width:35%;
+     background-color: rgba(128, 128, 128, 0.521);
+     text-align: center;
+     padding:0px;
+ }
+
+ .panel h1{
+     margin-top: 20px;
+     font-size:600%;
+     color:rgba(252, 214, 220, 0.86);
+     margin-left: 0px;
+     margin-right: 0px;
+     margin-bottom: 0px;
+ }
+
+ .panel p{
+     font-size:130%;
+ }
+
+ .moreInfoText{
+     position: absolute;
+     height:auto;
+     width:auto;
+     left: 38%;
+     top: 50%;
+     transform: translate(0%,-50%);
+     padding:0px;
+ }
+
+ .moreInfoText p{
+    font-size: 160%;
+    font-family: 'Source Code Pro', monospace; 
+    color: rgba(85, 7, 121, 0.86);
+    border-right: solid 3px rgba(54, 2, 78, 0.86);;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+  
+  @keyframes animated-text{
+    from{width: 0%;}
+    to{width: 100%;}
+  }
+  
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(54, 2, 78, 0.86);}
+    to{border-right-color: transparent;}
+  }
+
+ .parent4{
+    background-image: url(projects_background.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+ }
+
+ .git{
+     position:absolute;
+     background-size:contain;
+     background-repeat:no-repeat;
+     background-position: center;
+     top:8.5%;
+     left:60%;
+     background-image: url(git_icon.png);
+     height:10%;
+     width:5%;
+ }
+
+
+ .git:hover{
+    animation: section_hover 1s infinite;
+ }
+
+ .projects_title{
+     position:absolute;
+     height:auto;
+     width:auto;
+     left:32%;
+     top:-5%;
+     font-size:450%;
+     /* font-family: 'Titan One', cursive; */
+     color:black;
+ }
+ .timeline{
+     display:none;
+ }
+
+ .circle{
+     position:absolute;
+     height: 50px;
+     width:50px;
+     border-radius: 100px;
+     opacity:0;
+ }
+
+ .circle:hover{
+    opacity:1;
+}
+
+ .ww{
+     background-color: brown;
+     top: 38%;
+     left:25%;
+     opacity:0;
+ }
+
+ .th{
+     background-color:rgb(255, 255, 73);
+     top:35.9%;
+     left:53%;
+ }
+
+ .cp{
+     background-color: rgb(255, 162, 56);
+     top:67.3%;
+     left:30.5%;
+ }
+
+ .ip{
+     background-color:rgb(3, 63, 3);
+     top:64.55%;
+     left:80.35%;
+ }
+
+ .name{
+     display:none;
+ }
+
+ .parent5{
+     background-color:rgb(174, 174, 210);
+     mix-blend-mode:multiply;
+ }
+
+ .volunteer1{
+    position:absolute;
+    height:100%;
+    width:50%;
+    background-image: url(food_bank.jpeg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    opacity:0.75;
+}
+.left{
+   position:absolute;
+   height:100%;
+   width:50%;
+   opacity:0;
+   z-index:1;
+}
+
+.left:hover + .volunteer1{
+   opacity:0.9;
+}
+
+.volunteer2{
+    position:absolute;
+    height:100%;
+    width:50%;
+    background-image: url(UH_STEM2.jpeg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    left:50%;
+    opacity:0.75;
+}
+
+.right{
+    position:absolute;
+    height:100%;
+    width:50%;
+    left:50%;
+    opacity:0;
+    z-index:1;
+}
+
+.right:hover + .volunteer2{
+    opacity:0.9;
+}
+
+.volunteer_title{
+    position:absolute;
+    font-weight: bold;
+    height:auto;
+    width:auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size:700%;
+    font-family: 'Cinzel', serif;
+    color:white;
+}
